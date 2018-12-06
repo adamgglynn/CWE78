@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<container>
+  <testcase id="248722" type="Source Code" status="Accepted" submissionDate="2017-10-06" language="C++" author="NSA/Center for Assured Software" numberOfFiles="9" testsuiteid="108">
+    <description><![CDATA[CWE: 78 OS Command Injection<br/> BadSource: listen_socket Read data using a listen socket (server side)<br/> GoodSource: Fixed string<br/> Sinks: w32_spawnvp<br/> BadSink : execute command with wspawnvp<br/> Flow Variant: 84 Data flow: data passed to class constructor and destructor by declaring the class object on the heap and deleting it after use]]></description>
+    <association type="replacing" testcaseid="122742"/>
+    <file path="000/248/722/CWE78_OS_Command_Injection__wchar_t_listen_socket_w32_spawnvp_84.h" language="C" size="1843" checksum="c33251cdab94e6ee2ededf0f5d1a0eb5796e482e"/>
+    <file path="shared/108/std_thread.c" language="C" size="4580" checksum="e2e9aef736aa0881ad8a326c4fb83b226b6a674a"/>
+    <file path="shared/108/io.c" language="C" size="5429" checksum="bcf531cb1922c03347031698c1c72eddadbf0d88"/>
+    <file path="shared/108/std_testcase_io.h" language="C" size="1457" checksum="56de16829d5ac9d8086670ee5098217aa6694d26"/>
+    <file path="000/248/722/CWE78_OS_Command_Injection__wchar_t_listen_socket_w32_spawnvp_84_goodG2B.cpp" language="C++" size="1744" checksum="df4ffa6b9d3a4fa8cdb0f9f27b3bb0065eaf3ec8"/>
+    <file path="shared/108/std_testcase.h" language="C" size="4004" checksum="d1801c64bc49d5d05fb3d55f7cc7e3a925c47e2f"/>
+    <file path="000/248/722/CWE78_OS_Command_Injection__wchar_t_listen_socket_w32_spawnvp_84a.cpp" language="C++" size="2468" checksum="c973790cb39c3eb8ca192942e5de0ed8622d2619"/>
+    <file path="000/248/722/CWE78_OS_Command_Injection__wchar_t_listen_socket_w32_spawnvp_84_bad.cpp" language="C++" size="4530" checksum="8a26d50bd5921320ef4d5de1d46b01ed885afb28">
+      <mixed line="137" name="CWE-078: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"/>
+    </file>
+    <file path="shared/108/std_thread.h" language="C" size="705" checksum="30c379e3195e21db01665d2b04aadcb58a4cacc9"/>
+  </testcase>
+</container>
